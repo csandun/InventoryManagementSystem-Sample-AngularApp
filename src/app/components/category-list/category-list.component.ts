@@ -54,7 +54,7 @@ export class CategoryListComponent implements OnInit {
   }
 
   private getCategories() {
-    this.categoryService.getCategoryIist().subscribe({
+    this.categoryService.getCategoryList().subscribe({
       next: (categories: Category[]) => {
         this.categories = categories;
       },
