@@ -1,22 +1,22 @@
-<app-category-add (categoryEmitted)="emitedCategory($event)" [actionChanges]="currentFormActionChanges"
-                  *ngIf="formActions.None !== currentFormAction " ></app-category-add>
+<app-category-operation (categoryEmitted)="emitedCategory($event)" [actionChanges]="currentFormActionChanges"
+                  *ngIf="formActions.None !== currentFormAction " ></app-category-operation>
 <div class="card">
-  <div class="card-header">
+  <div class="card-header d-flex justify-content-between align-items-center">
     <h4 class="card-title">
       Category List
     </h4>
     <button (click)="addCategory()" class="btn btn-primary align-items-end">
-      Add Category
+      New Category
     </button>
   </div>
   <div class="card-body">
     <table class="table">
       <thead class="table-dark">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Type</th>
-        <th scope="col">Action</th>
+        <th scope="col" class="w-20">#</th>
+        <th scope="col" class="w-30">Name</th>
+        <th scope="col"  class="w-30">Type</th>
+        <th scope="col" class="w-25">Action</th>
       </tr>
       </thead>
       <tbody *ngIf="categories.length > 0">

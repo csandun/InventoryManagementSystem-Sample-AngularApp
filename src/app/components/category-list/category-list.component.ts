@@ -54,13 +54,13 @@ export class CategoryListComponent implements OnInit {
   }
 
   private getCategories() {
-    this.categoryService.getCategoryIist().subscribe(
-      (categories: Category[]) => {
+    this.categoryService.getCategoryIist().subscribe({
+      next: (categories: Category[]) => {
         this.categories = categories;
       },
-      (error) => {
+      error: (error) => {
         console.log(error);
       }
-    );
+    });
   }
 }

@@ -8,7 +8,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
-import { CategoryAddComponent } from './components/category-add/category-add.component';
+import { CategoryOperationComponent } from './components/category-operation/category-operation.component';
 import { ItemAddComponent } from './components/item-add/item-add.component';
 import {ReactiveFormsModule} from "@angular/forms";
 
@@ -18,7 +18,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     ItemListComponent,
     CategoryListComponent,
     HeaderComponent,
-    CategoryAddComponent,
+    CategoryOperationComponent,
     ItemAddComponent
   ],
   imports: [
